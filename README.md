@@ -1,3 +1,9 @@
+<div align="center">
+    <a href="./public/banner.png" target="_blank">
+        <img src="./public/banner.png" alt="Banner">
+    </a>
+</div>
+
 # ExpressJS Backend Boilerplate
 
 A ready-to-use Express.js boilerplate for fast API development, with essential configurations for security, environment variables, and database integration.
@@ -80,12 +86,12 @@ FRONTEND_URL=           # Your frontend URL
 │   ├── utils/                 # Utility functions
 │   ├── index.ts               # Server entry point
 ├── .env                       # Development environment variables
-└── .env.example               # Example environment variables
-└── .gitignore                 # Git ignore file (e.g., node_modules, .env)
-└── .prettierignore            # Files to ignore for Prettier formatting
-└── .prettierrc.json           # Prettier configuration file
-└── .package-lock.json         # Lock file to track exact package versions
-└── .package.json              # Project's package metadata and dependencies
+├── .env.example               # Example environment variables
+├── .gitignore                 # Git ignore file (e.g., node_modules, .env)
+├── .prettierignore            # Files to ignore for Prettier formatting
+├── .prettierrc.json           # Prettier configuration file
+├── .package-lock.json         # Lock file to track exact package versions
+├── .package.json              # Project's package metadata and dependencies
 └── README.md                  # Project overview and setup instructions
 ```
 
