@@ -21,7 +21,7 @@ A ready-to-use Express.js boilerplate for fast API development, with essential c
 - **Middleware**:
   - CORS
   - URL Parser
-  - Cookie Paraser
+  - Cookie Parser
   - Authentication
   - Security headers
   - Role-based access control
@@ -31,7 +31,7 @@ A ready-to-use Express.js boilerplate for fast API development, with essential c
 ## Prerequisites
 
 - Node.js (v16+)
-- npm, yarn, or pnpm
+- Node Package Manager (NPM)
 - MongoDB
 
 ## Installation
