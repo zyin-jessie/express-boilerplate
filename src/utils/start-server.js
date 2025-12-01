@@ -16,7 +16,7 @@ const startServer = (app, PORT, options = {}) => {
   const routesCount = countFilesInDirectory(path.join(srcPath, 'routes'));
   const modelsCount = countFilesInDirectory(path.join(srcPath, 'models'));
   
-  // Colors and Statu
+  // Colors and Status
   const apiDocsText = hasApiDocs ? "Yes" : "No";
   const dbStatusText = dbConnected ? "Connected" : "Disconnected";
   const dbStatusColor = dbConnected ? kleur.green().bold : kleur.red().bold;

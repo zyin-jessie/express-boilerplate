@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 import dbConnection from '#@/config/dbConnection.js';
 import authRoutes from '#@/routes/auth.route.js';
 import startServer from '#@/utils/start-server.js';
+import cors from '#@/middleware/cors.js';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -14,6 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(helmet());
+app.use(cors);
 
 // Database Connection
 const dbStatus = await dbConnection();
@@ -29,6 +31,6 @@ app.get('/', (request, response) => {
 
 // Start the server
 startServer(app, PORT, { 
-    hasApiDocs: true,
+    hasApiDocs: false,
     dbConnected: dbStatus.connected
 });
